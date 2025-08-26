@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-items = []
+items = [{'user':'Test','email':'Test@gmail.com' }]
 
 @app.route('/items', methods=['GET'])
 def get_items():
